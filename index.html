@@ -1,4 +1,3 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,38 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workplace</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <center><h1><u >Warm Welcome</u></h1>
-    <h2><i>MY BIO-DATA</i></h2></center><hr>
-    <img src="./assets/Handwritten_2022-11-23_234258.jpg" alt="saatyapi-photo.jpeg" height="270">
-    <h1>SAATYAPI BHATTACHARYA</h1><hr>
-    <h3>Address: KUMUDNAGAR Nasra Nadia West Bengal - 741201 | 7865924419 | saatyapi1104@gmail.com | Date of birth: 11-06-2004 | Place of Birth: Kalyani | Nationality: Indian | Driving License: WB51 2023 0008173</h3>
-    <h4><ol>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#declaration">Declaration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="fade-in">
+            <h1 class="center-text"><u>Warm Welcome</u></h1>
+            <h2 class="center-text"><i>MY BIO-DATA</i></h2>
+            <hr>
+            <img src="./assets/Handwritten_2022-11-23_234258.jpg" alt="saatyapi-photo" class="profile-pic">
+            <h1>SAATYAPI BHATTACHARYA</h1>
+            <p class="contact-info">Address: Kumudnagar, Nasra, Nadia, West Bengal - 741201 | 7865924419 | saatyapi1104@gmail.com | Date of Birth: 11-06-2004 | Nationality: Indian | Driving License: WB51 2023 0008173</p>
+            <hr>
+        </section>
+
         <li>PROFILE</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('profileContent')">Click to Expand Profile</button>
+    <div id="profileContent" class="dropdown-content">
+        <p>Motivated and enthusiastic college student eager to gain firsthand experience and contribute to different interesting projects through a challenging internship opportunity. Excellent communication skills and a collaborative mindset, demonstrated through involvement in presenting PowerPoint presentations on different topics in different college events. Committed to leveraging classroom knowledge and practical skills to make meaningful contributions to your organization while furthering personal and professional growth.</p>
+    </div>
+</div>
+
+<li>EXPERIENCE</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('experienceContent')">Click to Expand Experience</button>
+    <div id="experienceContent" class="dropdown-content">
         <ul>
-            <li><p align="justify">Motivated and enthusiastic college student eager to gain firsthand experience and contribute to different interesting projects through a challenging internship opportunity. Excellent communication skills and a collaborative mindset, demonstrated through involvement in presenting PowerPoint presentations on different topics in different college events. Committed to leveraging classroom knowledge and practical skills to make meaningful contributions to your organization while furthering personal and professional growth.</p></li>
+            <li><strong>PROJECT INTERN | TYWN | APRIL 2024 – PRESENT</strong></li>
+            <li><strong>GRAPHICS DESIGNER | CODE-FORGE | MARCH 2024 – PRESENT</strong></li>
         </ul>
-        <li>EXPERIENCE</li><details>
+    </div>
+</div>
+
+<li>EDUCATION</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('educationContent')">Click to Expand Education</button>
+    <div id="educationContent" class="dropdown-content">
         <ul>
-            <li>PROJECT INTERN | TYWN | APRIL 2024 – PRESENT</li>
-            <li>GRAPHICS DESIGNER | CODE-FORGE | MARCH 2024 – PRESENT</li>
-        </ul></details>
-        <li>EDUCATION</li><details>
-        <ul>
-            <li>        BACHELOR OF TECHNOLOGY (B. TECH) | AUGUST 2023 | NATIONAL INSTITUTE OF ADVANCED MANUFACTURING TECHNOLOGY (NIAMT), RANCHI <details>
-                Ongoing Bachelor of Technology (B. Tech) in Metallurgy and Materials Engineering (Expected Graduation: 2027)National Institute of Advanced Manufacturing Technology (NIAMT), Hatia, Ranchi</details><br>
-                </li>
-                <li>INTERMEDIATE | MARCH 2020 – APRIL 2022 | SATISH CHANDRA MEMORIAL SCHOOL, CHAKDAHA
-                <details>Subjects: Physics, Chemistry, Mathematics, Computer Science, English Literature, Biology
-                Percentage (%) Obtained in AISSCE: 86.84 </details><br></li>
-                <li>MATRICULATION | MARCH 2016 – SEPTEMBER 2020 | SATISH CHANDRA MEMORIAL SCHOOL, CHAKDAHA
-                <details>Subjects: Mathematics Standard, Science, Social Science, English communication, Hindi Literature.
-                Percentage (%) Obtained in AISSE: 84.6</details><br></li>
-        </ul></details>
-        <li>SKILLS & ABILITIES</li><details>
+            <li>
+                <strong>BACHELOR OF TECHNOLOGY (B. TECH) | AUGUST 2023 | NATIONAL INSTITUTE OF ADVANCED MANUFACTURING TECHNOLOGY (NIAMT), RANCHI</strong>
+                <p>Ongoing Bachelor of Technology (B. Tech) in Metallurgy and Materials Engineering (Expected Graduation: 2027), National Institute of Advanced Manufacturing Technology (NIAMT), Hatia, Ranchi.</p>
+            </li>
+            <li>
+                <strong>INTERMEDIATE | MARCH 2020 – APRIL 2022 | SATISH CHANDRA MEMORIAL SCHOOL, CHAKDAHA</strong>
+                <p>Subjects: Physics, Chemistry, Mathematics, Computer Science, English Literature, Biology.<br>Percentage (%) Obtained in AISSCE: 86.84</p>
+            </li>
+            <li>
+                <strong>MATRICULATION | MARCH 2016 – SEPTEMBER 2020 | SATISH CHANDRA MEMORIAL SCHOOL, CHAKDAHA</strong>
+                <p>Subjects: Mathematics Standard, Science, Social Science, English Communication, Hindi Literature.<br>Percentage (%) Obtained in AISSE: 84.6</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<li>SKILLS & ABILITIES</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('skillsContent')">Click to Expand Skills & Abilities</button>
+    <div id="skillsContent" class="dropdown-content">
         <ul>
             <li>Business Analysis</li>
             <li>Leadership</li>
@@ -48,36 +86,58 @@
             <li>Microsoft PowerPoint</li>
             <li>Animation</li>
             <li>Graphics Designing</li>
-        </ul></details>
-        <li>LANGUAGE</li>
-        <details><ul>
-            <li>English, Hindi, Bengali (Native Language)</li>
-        </ul></details>
-        <li>COURSES & ACHIEVMENT</li>
-        <details>
-            <ul>
-                <li>ANIMATION| FEBRUARY 2024 – APRIL 2024| GOVERNMENT CERTIFIED INTERNSHALA COURSE</li><hr>
-                <li>ADOBE ILLUSTRATOR| MARCH2024 – MAY 2024| GOVERNMENT CERTIFIED INTERNSHALA COURSE</li><hr>
-                <li>AUTOCAD 3D| MAY2024 – JULY 2024| GOVERNMENT CERTIFIED INTERNSHALA COURSE</li><hr>
-                <li>BUSINESS ANALYTICS| JUNE2024 – AUGUST 2024| GOVERNMENT CERTIFIED INTERNSHALA COURSE</li>
-            </ul></details>
-        <li>ACTIVITIES & INTERESTS</li>
-        <details>Painting, Modelling, Designing, Animating, Video Editing, Gaming, Outdoor Games, Newspaper reading.</details>
-        
+        </ul>
+    </div>
+</div>
 
-        
-    </ol><hr>
-    <h2>DECLARATION</h2>
-    I hereby declare that all the above information is true to the best of my knowledge.
-    <br><br>
-    Date: 19-03-2024 <BR></BR>Place: Ranchi  <p align="right">
-        <div class="signature-section">
-            <img src="./assets/Signature.jpg" alt="signature" width="250">
-            <p>SAATYAPI BHATTACHARYA</p>
-        </div>
-                  
-    </h4>
-    <hr><p align="left"><a href="./public/about.html">About Me</a></p>
-    <a href="./public/contact.html">Connect Me</a>
+<li>LANGUAGE</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('languageContent')">Click to Expand Languages</button>
+    <div id="languageContent" class="dropdown-content">
+        <ul>
+            <li>English, Hindi, Bengali (Native Language)</li>
+        </ul>
+    </div>
+</div>
+
+<li>COURSES & ACHIEVEMENT</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('coursesContent')">Click to Expand Courses & Achievements</button>
+    <div id="coursesContent" class="dropdown-content">
+        <ul>
+            <li>ANIMATION | FEBRUARY 2024 – APRIL 2024 | GOVERNMENT CERTIFIED INTERNSHALA COURSE</li>
+            <li>ADOBE ILLUSTRATOR | MARCH 2024 – MAY 2024 | GOVERNMENT CERTIFIED INTERNSHALA COURSE</li>
+            <li>AUTOCAD 3D | MAY 2024 – JULY 2024 | GOVERNMENT CERTIFIED INTERNSHALA COURSE</li>
+            <li>BUSINESS ANALYTICS | JUNE 2024 – AUGUST 2024 | GOVERNMENT CERTIFIED INTERNSHALA COURSE</li>
+        </ul>
+    </div>
+</div>
+
+<li>ACTIVITIES & INTERESTS</li>
+<div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown('activitiesContent')">Click to Expand Activities & Interests</button>
+    <div id="activitiesContent" class="dropdown-content">
+        <p>Painting, Modeling, Designing, Animating, Video Editing, Gaming, Outdoor Games, Newspaper reading.</p>
+    </div>
+</div>
+
+
+        <section id="declaration" class="content-section fade-in">
+            <h2>Declaration</h2>
+            <p>I hereby declare that all the above information is true to the best of my knowledge.</p>
+            <p>Date: 19-03-2024 | Place: Ranchi</p>
+            <div class="signature-section">
+                <img src="./assets/Signature.jpg" alt="signature" width="250">
+                <p>SAATYAPI BHATTACHARYA</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="./public/about.html">About Me</a> | <a href="./public/contact.html">Connect Me</a></p>
+        <button id="back-to-top">Back to Top</button>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
