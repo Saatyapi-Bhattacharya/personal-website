@@ -1,126 +1,126 @@
-/* General Styles */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts and Colors */
 body {
-    font-family:'Orbitron', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     background-color: #222831;
     color: #EEEEEE;
-    margin: 20px;
     line-height: 1.6;
+    margin: 20px;
 }
 
-/* Center the main title and subtitle */
-center h1, center h2 {
+/* Navigation Styling */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #393E46;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin: 0 12px;
+}
+
+header nav ul li a {
     color: #00ADB5;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Styling for headings */
-h1 {
-    font-size: 28px;
-    text-align: center;
-    color: #EEEEEE;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 24px;
-    text-align: center;
-    color: #00ADB5;
-    margin-bottom: 20px;
-}
-
-h3, h4 {
-    color: #EEEEEE;
+/* Main Content Styling */
+main {
     margin-top: 20px;
 }
 
-/* Image styling */
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    border: 3px solid #393E46;
-}
-
-/* Horizontal rule styling */
-hr {
-    border: 1px solid #393E46;
+.content-section {
     margin: 20px 0;
 }
 
-/* List and details styling */
-ol {
-    list-style-type: decimal;
-    margin-left: 20px;
-    padding-left: 20px;
+.center-text {
+    text-align: center;
 }
 
-ul {
-    list-style-type: circle;
-    margin-left: 40px;
-    color: #00ADB5;
+/* Image Styling */
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 3px solid #393E46;
 }
 
-details {
-    margin-top: 10px;
-    cursor: pointer;
+/* Signature Styling */
+.signature-section {
+    text-align: right;
+    margin-top: 20px;
 }
 
-/* Paragraph styling */
-p {
-    text-align: justify;
-    color: #EEEEEE;
-}
-
-/* Links styling */
-a {
-    text-decoration: none;
-    color: #00ADB5;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #EEEEEE;
-    text-decoration: underline;
-}
-
-/* Declaration styling */
-.declaration {
-    font-weight: bold;
+/* Footer Styling */
+footer {
     text-align: center;
     margin-top: 30px;
 }
 
-/* Signature styling */
-.signature-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 30px;
+/* Button Styling */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ADB5;
+    color: #222831;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
 }
 
-.signature-section img {
-    border: 2px solid #393E46;
-    border-radius: 8px;
-    margin-bottom: 10px;
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
-.signature-section p {
-    margin: 0;
-    text-align: right;
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    .signature-section img {
-        width: 180px;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
+/* Dropdown Button */
+.dropbtn {
+    background-color: #00ADB5;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Show Dropdown Content */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Paragraph Styling Inside Dropdown */
+.dropdown-content p {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 10px 0;
+}
+
