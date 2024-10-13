@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family:'Orbitron', Arial, sans-serif;
+    background-color: #222831;
+    color: #EEEEEE;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Center the main title and subtitle */
+center h1, center h2 {
+    color: #00ADB5;
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #EEEEEE;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #00ADB5;
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    color: #EEEEEE;
+    margin-top: 20px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 3px solid #393E46;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 1px solid #393E46;
+    margin: 20px 0;
+}
+
+/* List and details styling */
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 40px;
+    color: #00ADB5;
+}
+
+details {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Paragraph styling */
+p {
+    text-align: justify;
+    color: #EEEEEE;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: #00ADB5;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #EEEEEE;
+    text-decoration: underline;
+}
+
+/* Declaration styling */
+.declaration {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Signature styling */
+.signature-section {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.signature-section img {
+    border: 2px solid #393E46;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .signature-section img {
+        width: 180px;
+    }
+}
